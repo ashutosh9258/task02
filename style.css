@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: rgb(153, 174, 214); */
+    background-color: rgb(131, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+.Stopwatch{
+    color: darkred;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.stopwatch-container {
+    background-color: darkgrey;
+    padding: 30px;
+    border-radius: 15px;
+    border-width: 10px;
+    box-shadow: 0 0 10px 5px #4f4c4c;
+    text-align: center;
+    width: 350px;
+}
+
+.display {
+    background-color: #cccccc;
+    font-size: 4rem;
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#startPauseBtn {
+    background-color: #28a745; /* Green for Start */
+    color: white;
+}
+
+#startPauseBtn.paused {
+    background-color: #ffc107; /* Yellow for Pause state */
+}
+
+#lapResetBtn {
+    background-color: #007bff; /* Blue for Lap/Reset */
+    color: white;
+}
+
+#lapResetBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.lap-times {
+    font-weight: bold;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.lap-times h2 {
+    font-size: 1.2rem;
+    color: #0d0c0c;
+}
+
+#lapList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lapList li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
